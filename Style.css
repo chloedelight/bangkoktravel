@@ -1,0 +1,293 @@
+body {
+    background-color: #FCFBF6;
+    margin: 0%;
+    padding: 0;
+}
+
+.title-word {
+    animation: color-animation 4s linear infinite;
+  }
+  
+  .title-word-1 {
+    --color-1: #DF8453;
+    --color-2: #3D8DAE;
+    --color-3: #E4A9A8;
+  }
+  
+  .title-word-2 {
+    --color-1: #DBAD4A;
+    --color-2: #ACCFCB;
+    --color-3: #17494D;
+  }
+  
+  .title-word-3 {
+    --color-1: #ACCFCB;
+    --color-2: #E4A9A8;
+    --color-3: #ACCFCB;
+  }
+  
+  .title-word-4 {
+    --color-1: #3D8DAE;
+    --color-2: #DF8453;
+    --color-3: #E4A9A8;
+  }
+  
+  @keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+  
+    justify-content: center;
+    place-items: center;  
+    text-align: center;
+    height: 20px;
+    padding-top: 80px;
+    padding-bottom: 5px;
+  
+    gap: 30px ;
+  }
+  
+  .title {
+    font-family: 'Arsenal', sans-serif;
+    font-weight: 60;
+    font-size: 20;
+    text-transform: uppercase;
+  }
+
+  .logo {
+    width: 100px;
+    padding: auto;
+  }
+  
+.nav {
+    overflow: hidden;
+    background-color: #13417d;
+    position: fixed;
+    width: 100%;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.nav a {
+    float: left;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    padding: 14px 16px;
+    color: white;
+    font-family: 'Arsenal', sans-serif;
+    font-size: 20px;
+}
+
+.nav a:hover {
+  /* border-radius: 8px; */
+  background-color: #f8bf32;
+  color: #d04b2d;
+}
+
+.active {
+	/* background-color: #d04b2d; */
+	color: rgb(37, 20, 20);
+}
+
+.nav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+	.navigation a:not(:first-child){
+        display: none;
+    }
+
+    .nav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .nav.responsive {
+        position: relative;
+    }
+
+    .nav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+.container3 {
+
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+
+  justify-content: center;
+  align-items:center;
+  justify-items: flex-start;
+  align-self: center;
+
+  gap: 30px ;
+  
+  margin: auto;   
+}
+
+.cont{
+
+  padding: 50px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: row wrap;
+  text-align: left;
+  justify-items: right;
+  width: 500px;
+  height: 200px;
+  gap: 5px;
+}
+
+.subHead {
+  text-align: left;
+  font-weight: 600;
+  font-size: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fe8713;
+  font-family: 'Arsenal', sans-serif;
+}
+
+p{
+  font-family: 'Arsenal', sans-serif;
+}
+
+h3{
+  font-family: 'Arsenal', sans-serif;
+  font-weight: bold;
+  color:#13417d
+}
+
+#photoArray {
+  display: grid;
+  grid-gap: .5em;
+  grid-template-areas:
+  "photo1 photo2 photo3"
+  "photo1 photo4 photo5";
+  grid-template-columns: 1fr 20% 20%;
+}
+
+#photoArray > div {
+  border: 2px solid #EEE;
+  border-radius: 5px;
+}
+
+#photoArray > div:first-child
+{
+  grid-area: photo1;
+  height: 450px;
+}
+
+.container2 {
+  width:60%;
+  height:300px;
+}
+
+.grid {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+footer {
+  background-image: url("https://chloetoey.neocities.org/pngegg%20(1).png");
+  background-size: 1000px;
+  background-color: #13417d;
+  background-repeat: no-repeat;
+
+  width: 90%;
+
+  display: flex;
+  flex-flow: column;
+  flex-wrap: column wrap;
+  align-items: left;
+  justify-content: space-between;
+
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 20px;
+
+  text-align: center;
+  font-size: 15px;
+  color: white;
+
+  margin: auto;
+}
+
+img#footerLogo {
+  max-width: 170px;
+  padding-right: 30px;
+}
+
+a.footerButton {
+  color: white;
+}
+
+div.footerRow {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+
+  padding-top:50px;
+  padding-bottom: 50px;
+
+  gap: 20px
+
+}
+
+div.footerButtons {
+  display: flex;
+  flex-direction: row;
+
+  justify-items: center;
+  align-items: center;
+}
+
+
+.footerButton {
+  display: block;
+  position: static;
+  border: none; 
+  padding-right: 30px;
+
+  font-family: 'Arsenal', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+
+.footerLink {
+  background-color: none;
+    display: flex;
+    flex-flow: row;
+    justify-items: center;
+    gap: 10px;
+}

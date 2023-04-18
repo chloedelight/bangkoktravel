@@ -1,0 +1,40 @@
+body {
+    background-color: #FCFBF6;
+    margin: 0%;
+}
+  
+table th {
+    border: 1px solid #523C05;
+    width: 1000px;
+    text-align: left;
+    border-spacing: 20px;
+    font-family: 'Arsenal', sans-serif;;
+    font-size: 20px;
+  }
+  
+  table td {
+    border: 1px solid #523C05;
+    width: 1000px;
+    border-spacing: 20px;
+    font-family: poppins;
+    font-size: 17px;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid #523C05;
+    padding: 10px;
+  }
+
+.video iframe {
+    padding-top: 10%;
+    width: 80%;
+    height: 500px;
+}
+
+@media only screen and (max-width: 800px) {
+    .video iframe {
+        height: 200px;
+
+    }
+}

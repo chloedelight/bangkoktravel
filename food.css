@@ -1,0 +1,202 @@
+body {
+    background-color: #FCFBF6;
+}
+
+div#mainhead {
+    background-image: url("https://chloetoey.neocities.org/front-menu-2.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    align-items: center;
+
+    padding-top: 80px;
+    padding-bottom: 10px;
+}
+
+h2 {
+    text-align: left;
+    color: white;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    width: 100%;
+    padding-left: 10%;
+    font-family: 'Arsenal';
+    font-weight: bold;
+}
+
+.foodcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+  
+    justify-content: center;
+    align-items:center;
+    justify-items: flex-start;
+    align-self: center;
+  
+    gap: 30px ;
+    
+    margin: auto;   
+    padding-bottom: 10%;
+  }
+  
+  .foodcont{
+  
+    padding: 50px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: row wrap;
+    text-align: left;
+    justify-items: right;
+    width: 500px;
+    height: 200px;
+    gap: 5px;
+  }
+  
+  .foodsubHead {
+    text-align: left;
+    font-weight: 600;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #D04B2D;
+    font-family: 'Arsenal', sans-serif;
+  }
+  
+  p2{
+    font-family: 'Arsenal', sans-serif;
+    font-size: 20px;
+    
+  }
+
+
+  .SliderHolder
+  {
+      width: 500px;
+      height: 300px;
+      background-color: yellow;
+      margin-left: auto;
+      margin-right: 55%;
+      text-align: center;
+      overflow: hidden;
+  }
+  
+  .ImageHolder
+  {
+      width: 2500px;
+      background-color: red;
+      height: 300px; 
+      clear: both;
+      position: relative;
+      transition: left 2s;
+  }
+  
+  .SliderImage
+  {
+      float: left;
+      margin: 0px;
+      padding: 0px;
+      position: relative;
+  }
+  
+  #SliderImage1:target ~ .ImageHolder
+  {
+      left: 0x;
+  }
+  
+  #SliderImage2:target ~ .ImageHolder
+  {
+      left: -500px;
+  }
+  
+  #SliderImage3:target ~ .ImageHolder
+  {
+      left: -1000px;
+  }
+  #SliderImage4:target ~ .ImageHolder
+  {
+      left: -1500px;
+  }
+  #SliderImage5:target ~ .ImageHolder
+  {
+      left: -2000px;
+  }
+  .ButtonHolder
+  {
+      position: relative;
+      top: -20px;
+  }
+  
+  .SliderChange
+  {
+      display: inline-block;
+      height: 10px;
+      width: 10px;
+      border-radius: 5px;
+      background-color: #13417d;
+  }
+
+  .image-list-small {
+    font-family: 'Arsenal', sans-serif;
+    margin: auto;
+    text-align: left;
+    max-width: 80%;
+  }
+  
+  .image-list-small li {
+    display: inline-block;
+    width: 30%;
+    margin: 0 12px 30px;
+  }
+  
+  
+  /* Photo */
+  
+  .image-list-small li > a {
+    display: block;
+    text-decoration: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 240px;
+    margin: 0;
+    padding: 0;
+
+  }
+  
+  .image-list-small .details {
+    margin-top: 13px;
+  }
+  
+  
+  /* Title */
+  
+  .image-list-small .details h3 {
+    display: block;
+    font-family: 'Arsenal', sans-serif;
+    font-size: 16px;
+    margin: 0 0 3px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .image-list-small .details h3 a {
+    color: #303030;
+    text-decoration: none;
+  }
+  
+  .image-list-small .details .image-author {
+    display: block;
+    color: #717171;
+    font-size: 11px;
+    font-weight: normal;
+    margin: 0;
+  }
